@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var router = Router()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        switch router.screen {
+        case .splash:
+            SplashView()
+                .environmentObject(router)
+        case .home:
+            HomeView()
+                .environmentObject(router)
         }
-        .padding()
     }
 }
 
