@@ -12,7 +12,12 @@ struct HomeView: View {
     @EnvironmentObject var router: Router
     
     var body: some View {
-        Text("Hello, World!")
+        TabView {
+            NewsView()
+                .tabItem {
+                    Label("Noticias", systemImage: "newspaper")
+                }
+        }
     }
 }
 
