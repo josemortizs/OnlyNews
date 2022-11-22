@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAC9435D292D771600DF5F9F /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC9435C292D771600DF5F9F /* Endpoints.swift */; };
+		BAC9435F292D77DA00DF5F9F /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC9435E292D77DA00DF5F9F /* NewsViewModel.swift */; };
+		BAC94362292D788400DF5F9F /* NewsRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC94361292D788400DF5F9F /* NewsRepositoryProtocol.swift */; };
+		BAC94365292D7ABF00DF5F9F /* NewsApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC94364292D7ABF00DF5F9F /* NewsApiRepository.swift */; };
 		BAF7C1C92925763500F3A1D1 /* OnlyNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF7C1C82925763500F3A1D1 /* OnlyNewsApp.swift */; };
 		BAF7C1CB2925763500F3A1D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF7C1CA2925763500F3A1D1 /* ContentView.swift */; };
 		BAF7C1CD2925763600F3A1D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF7C1CC2925763600F3A1D1 /* Assets.xcassets */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BAC9435C292D771600DF5F9F /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		BAC9435E292D77DA00DF5F9F /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		BAC94361292D788400DF5F9F /* NewsRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepositoryProtocol.swift; sourceTree = "<group>"; };
+		BAC94364292D7ABF00DF5F9F /* NewsApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsApiRepository.swift; sourceTree = "<group>"; };
 		BAF7C1C52925763500F3A1D1 /* OnlyNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlyNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF7C1C82925763500F3A1D1 /* OnlyNewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlyNewsApp.swift; sourceTree = "<group>"; };
 		BAF7C1CA2925763500F3A1D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +93,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BAC9435B292D76FB00DF5F9F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				BAC9435C292D771600DF5F9F /* Endpoints.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		BAC94360292D785D00DF5F9F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BAC94361292D788400DF5F9F /* NewsRepositoryProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BAC94363292D7AA700DF5F9F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BAC94364292D7ABF00DF5F9F /* NewsApiRepository.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		BAF7C1BC2925763500F3A1D1 = {
 			isa = PBXGroup;
 			children = (
@@ -147,7 +179,10 @@
 		BAF7C1F2292576DB00F3A1D1 /* DataModules */ = {
 			isa = PBXGroup;
 			children = (
+				BAC94363292D7AA700DF5F9F /* API */,
+				BAC9435B292D76FB00DF5F9F /* Constants */,
 				BAF7C20329258FB800F3A1D1 /* Models */,
+				BAC94360292D785D00DF5F9F /* Protocols */,
 				BAF7C2062925911800F3A1D1 /* Utils */,
 			);
 			path = DataModules;
@@ -191,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				BAF7C20129258ED300F3A1D1 /* NewsView.swift */,
+				BAC9435E292D77DA00DF5F9F /* NewsViewModel.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -346,8 +382,12 @@
 				BAF7C1F92925858400F3A1D1 /* Router.swift in Sources */,
 				BAF7C1FF2925874900F3A1D1 /* SplashView.swift in Sources */,
 				BAF7C2082925913400F3A1D1 /* StringDecoder.swift in Sources */,
+				BAC9435D292D771600DF5F9F /* Endpoints.swift in Sources */,
 				BAF7C20A2925915A00F3A1D1 /* Helpers.swift in Sources */,
+				BAC94362292D788400DF5F9F /* NewsRepositoryProtocol.swift in Sources */,
+				BAC9435F292D77DA00DF5F9F /* NewsViewModel.swift in Sources */,
 				BAF7C20529258FD300F3A1D1 /* Article.swift in Sources */,
+				BAC94365292D7ABF00DF5F9F /* NewsApiRepository.swift in Sources */,
 				BAF7C20229258ED300F3A1D1 /* NewsView.swift in Sources */,
 				BAF7C1FC292586FB00F3A1D1 /* HomeView.swift in Sources */,
 				BAF7C1C92925763500F3A1D1 /* OnlyNewsApp.swift in Sources */,

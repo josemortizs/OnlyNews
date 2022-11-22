@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct NewsView: View {
+    
+    @StateObject private var viewmodel = NewsViewModel(repository: NewsApiRepository())
+    
     var body: some View {
-        Text("Hello, World!")
+        List {
+            ForEach(viewmodel.news ?? [], id: \.description) { new in
+                Text(new.title ?? "")
+                    .padding()
+            }
+        }
+        .task {
+            await viewmodel.fetchNews()
+        }
     }
 }
 
