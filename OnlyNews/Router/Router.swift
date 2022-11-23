@@ -10,6 +10,7 @@ import SwiftUI
 enum Screen {
     case splash
     case home
+    case webview(url: URLRequest)
 }
 
 class Router: ObservableObject {

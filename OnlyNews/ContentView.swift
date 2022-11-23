@@ -20,6 +20,9 @@ struct ContentView: View {
         case .home:
             HomeView()
                 .environmentObject(router)
+        case .webview(let url):
+            WebView(url: url)
+                .environmentObject(router)
         }
     }
 }
