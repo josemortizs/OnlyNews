@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA53E35D2935246700759AC4 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA53E35C2935246700759AC4 /* Shapes.swift */; };
 		BA54F81F292EC3AA00D5E0C1 /* WebViewWithCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54F81E292EC3AA00D5E0C1 /* WebViewWithCoordinator.swift */; };
 		BA54F822292EC40800D5E0C1 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54F821292EC40800D5E0C1 /* WebView.swift */; };
 		BAC9435D292D771600DF5F9F /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC9435C292D771600DF5F9F /* Endpoints.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA53E35C2935246700759AC4 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		BA54F81E292EC3AA00D5E0C1 /* WebViewWithCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewWithCoordinator.swift; sourceTree = "<group>"; };
 		BA54F821292EC40800D5E0C1 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		BAC9435C292D771600DF5F9F /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA53E35B2935243D00759AC4 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				BA53E35C2935246700759AC4 /* Shapes.swift */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
 		BA54F820292EC3E900D5E0C1 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,7 +167,6 @@
 				BAF7C1CC2925763600F3A1D1 /* Assets.xcassets */,
 				BAF7C1F2292576DB00F3A1D1 /* DataModules */,
 				BAF7C1F3292576EB00F3A1D1 /* UseCases */,
-				BA54F820292EC3E900D5E0C1 /* WebView */,
 				BAF7C1F52925852100F3A1D1 /* Router */,
 				BAF7C1CE2925763600F3A1D1 /* Preview Content */,
 			);
@@ -206,7 +215,9 @@
 			children = (
 				BAF7C1FA292586DD00F3A1D1 /* Home */,
 				BAF7C20029258EBD00F3A1D1 /* News */,
+				BA53E35B2935243D00759AC4 /* Reusables */,
 				BAF7C1FD2925872600F3A1D1 /* Splash */,
+				BA54F820292EC3E900D5E0C1 /* WebView */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -403,6 +414,7 @@
 				BAC9435F292D77DA00DF5F9F /* NewsViewModel.swift in Sources */,
 				BA54F81F292EC3AA00D5E0C1 /* WebViewWithCoordinator.swift in Sources */,
 				BAF7C20529258FD300F3A1D1 /* Article.swift in Sources */,
+				BA53E35D2935246700759AC4 /* Shapes.swift in Sources */,
 				BAC94365292D7ABF00DF5F9F /* NewsApiRepository.swift in Sources */,
 				BAF7C20229258ED300F3A1D1 /* NewsView.swift in Sources */,
 				BAF7C1FC292586FB00F3A1D1 /* HomeView.swift in Sources */,

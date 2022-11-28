@@ -20,8 +20,16 @@ struct NewsView: View {
                         router.screen = .webview(url: URLRequest(url: url))
                     }
                 } label: {
-                    Text(new.title ?? "")
-                        .padding()
+                    HStack(alignment: .center) {
+                        
+                        ShapeWithArc()
+                            .frame(width: 50, height: 50)
+                            .rotationEffect(Angle(degrees: 90))
+                        
+                        Text(new.title ?? "")
+                            .lineLimit(2)
+                            .padding()
+                    }
                 }
 
             }

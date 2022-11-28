@@ -12,15 +12,26 @@ struct SplashView: View {
     @EnvironmentObject var router: Router
     
     var body: some View {
-        Image("splash")
-            .resizable()
-            .ignoresSafeArea()
-            .task {
-                try? await Task.sleep(until: .now + .seconds(1), clock: .continuous)
-                withAnimation {
-                    router.screen = .home
+        ZStack {
+                        
+            Text("Only News")
+                .font(.system(size: 45, weight: .bold, design: .monospaced))
+                .bold()
+                .foregroundColor(.black)
+                .offset(y: -250)
+                        
+            Image("splash")
+                .resizable()
+                .clipShape(WaterShape())
+                .compositingGroup()
+                .task {
+                    try? await Task.sleep(until: .now + .seconds(1), clock: .continuous)
+                    withAnimation {
+                        //router.screen = .home
+                    }
                 }
-            }
+        }
+        .ignoresSafeArea()
     }
 }
 
