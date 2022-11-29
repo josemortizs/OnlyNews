@@ -27,7 +27,7 @@ struct SplashView: View {
                 .task {
                     try? await Task.sleep(until: .now + .seconds(1), clock: .continuous)
                     withAnimation {
-                        //router.screen = .home
+                        router.screen = .home
                     }
                 }
         }

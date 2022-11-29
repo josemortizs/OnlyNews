@@ -8,6 +8,7 @@
 import Foundation
 
 actor NewsApiRepository: NewsRepositoryProtocol {
+    
     func fetchNews() async throws -> [Article] {
         
         guard let url = URL_NEWS_FROM_LANGUAGE else {

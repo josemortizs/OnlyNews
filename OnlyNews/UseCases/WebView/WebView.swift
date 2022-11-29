@@ -25,9 +25,9 @@ struct WebView: View {
                         Button {
                             router.screen = .home
                         } label: {
-                            Text("Home", tableName: "Main")
-                                .font(.callout)
-                                .foregroundColor(.black)
+                            Image(systemName: "newspaper")
+                                .resizable()
+                                .frame(width: 30, height: 30)
                         }
                     }
                 }

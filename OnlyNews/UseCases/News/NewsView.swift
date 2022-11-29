@@ -10,7 +10,7 @@ import SwiftUI
 struct NewsView: View {
     
     @EnvironmentObject var router: Router
-    @StateObject private var viewmodel = NewsViewModel(repository: NewsApiRepository())
+    @StateObject private var viewmodel = NewsViewModel(repository: NewsMockRepository())
     
     var body: some View {
         List {
@@ -25,10 +25,23 @@ struct NewsView: View {
                         ShapeWithArc()
                             .frame(width: 50, height: 50)
                             .rotationEffect(Angle(degrees: 90))
+                            .foregroundColor(.black)
                         
-                        Text(new.title ?? "")
-                            .lineLimit(2)
-                            .padding()
+                        VStack(alignment: .leading) {
+                            
+                            Text("\(new.author ?? "Autor desconocido") - \(new.source?.name ?? "Fuente desconocida")")
+                                .lineLimit(1)
+                                .font(.footnote)
+                                .foregroundColor(.black)
+                                .padding(.bottom, 3)
+                            
+                            Text(new.title ?? "")
+                                .font(.caption)
+                                .font(Font.system(size: 10))
+                                .lineLimit(2)
+                                .foregroundColor(.black)
+                        }
+                        .padding()
                     }
                 }
 
